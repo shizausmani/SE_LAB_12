@@ -8,18 +8,18 @@ app = Flask(__name__)
 def predict_email(email):
 
     spam_words = [
-        "won", "free", "prize", "claim",
+        "won", "free", "prize" "claim",
         "bank details", "reward", "urgent",
-        "lottery", "winner"
+        "lottery", "winner", "meeting"
     ]
 
-    email = email.lower()
+     email = email.lower()
 
     for word in spam_words:
         if word in email:
-            return "Spam"
+        return "Spam"
 
-    return "Not Spam"
+  return "Not spam"
 
 
 # HTML webpage
